@@ -18,8 +18,13 @@ const MediaView = () => {
                 <ul>allow selection of media files</ul>
                 <ul>allow uploading of media</ul>
             </p>
+            <button onClick={() => displayMedia()}>Display Available Media</button>
         </div>
     );
+
+
+    function displayMedia(){} //write some code here. Should load in media from user category
+
 }
 
 export default MediaView;
