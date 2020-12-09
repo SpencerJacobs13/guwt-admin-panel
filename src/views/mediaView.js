@@ -35,9 +35,7 @@ const MediaView = () => {
     );
 
 
-
-        //Eventually this will upload media from Database. For now it just 
-        //makes some text appear as a trial
+    
     function displayMedia(){
         setisClicked(true);
     }

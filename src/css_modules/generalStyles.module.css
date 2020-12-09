@@ -6,6 +6,7 @@
     text-align: center;
 }
 
+/* For laying out images to use on the left of mediaView */
 .leftColumnStyle {
     text-align: left;
 }
