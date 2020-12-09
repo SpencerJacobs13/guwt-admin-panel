@@ -12,7 +12,7 @@ const MediaView = () => {
     const [isClicked, setisClicked] = useState(false);
     const [open, setOpen] = React.useState(false);
 
-    return (
+        return (
         <div className={styles.generalStyle}>
             <h1>This is the media view</h1>
             <p>
@@ -28,8 +28,10 @@ const MediaView = () => {
                 <h1>
                     {randomTestText}
                 </h1>
-                {/* Display the image in the images folder */}
-                <img src="../images/callege-hall.jpg" alt = "College Hall"></img>
+                {/* Display the image in the images folder
+                *IMPORTANT* require() can be used for .mp3, .mp4, .mov, .pdf etc
+                */}
+                <img src={require('../images/college-hall.jpg')} height="300" width="300" alt="Cannot Display"></img>
                 </div>
             }
         </div>
