@@ -10,6 +10,7 @@ import styles from "../css_modules/generalStyles.module.css";
 const MediaView = () => {
     const randomTestText = useState("Images Available");
     const [isClicked, setisClicked] = useState(false);
+    const [open, setOpen] = React.useState(false);
 
     return (
         <div className={styles.generalStyle}>
@@ -28,14 +29,13 @@ const MediaView = () => {
                     {randomTestText}
                 </h1>
                 {/* Display the image in the images folder */}
-                <img src = "../images/egg.gif"/>
+                <img src="../images/callege-hall.jpg" alt = "College Hall"></img>
                 </div>
             }
         </div>
     );
 
 
-    
     function displayMedia(){
         setisClicked(true);
     }
