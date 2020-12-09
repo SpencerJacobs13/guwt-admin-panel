@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.leftColumnStyle {
+    text-align: left;
+}
+
 .buttonStyles {
     background-color: white; /* Green */
     border: black;

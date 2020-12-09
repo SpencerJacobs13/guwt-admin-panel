@@ -8,6 +8,8 @@ import { render } from "react-dom";
 import styles from "../css_modules/generalStyles.module.css";
 
 const MediaView = () => {
+    const randomTestText = useState("Images Available");
+    const [isClicked, setisClicked] = useState(false);
 
     return (
         <div className={styles.generalStyle}>
@@ -19,11 +21,26 @@ const MediaView = () => {
                 <ul>allow uploading of media</ul>
             </p>
             <button onClick={() => displayMedia()}>Display Available Media</button>
+            {
+                isClicked == true &&
+                <div className={styles.leftColumnStyle}>
+                <h1>
+                    {randomTestText}
+                </h1>
+                {/* Display the image in the images folder */}
+                <img src = "../images/egg.gif"/>
+                </div>
+            }
         </div>
     );
 
 
-    function displayMedia(){} //write some code here. Should load in media from user category
+
+        //Eventually this will upload media from Database. For now it just 
+        //makes some text appear as a trial
+    function displayMedia(){
+        setisClicked(true);
+    }
 
 }
 
