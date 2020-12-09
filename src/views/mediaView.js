@@ -4,10 +4,12 @@
 import React, { Fragment, useState} from "react";
 import { render } from "react-dom";
 
+
 //import the css module
 import styles from "../css_modules/generalStyles.module.css";
-
+import collegeHall from '../images/college-hall.jpg';
 const MediaView = () => {
+    
     const randomTestText = useState("Images Available");
     const [isClicked, setisClicked] = useState(false);
     const [open, setOpen] = React.useState(false);
@@ -31,7 +33,7 @@ const MediaView = () => {
                 {/* Display the image in the images folder
                 *IMPORTANT* require() can be used for .mp3, .mp4, .mov, .pdf etc
                 */}
-                <img src={require('../images/college-hall.jpg')} height="300" width="300" alt="Cannot Display"></img>
+                <img src={collegeHall} height="300" width="300" alt="Cannot Display"></img>
                 </div>
             }
         </div>
