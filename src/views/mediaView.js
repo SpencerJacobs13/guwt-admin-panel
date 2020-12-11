@@ -34,7 +34,6 @@ const MediaView = () => {
                 *IMPORTANT* require() can be used for .mp3, .mp4, .mov, .pdf etc
                 */}
                 <img src={collegeHall} height="300" width="300" alt="Cannot Display"></img>
-                <h1>Hello Hello</h1>
                 </div>
             }
         </div>
