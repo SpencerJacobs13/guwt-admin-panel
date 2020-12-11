@@ -4,7 +4,6 @@
 import React, { Fragment, useState} from "react";
 import { render } from "react-dom";
 
-
 //import the css module
 import styles from "../css_modules/generalStyles.module.css";
 import collegeHall from '../images/college-hall.jpg';
